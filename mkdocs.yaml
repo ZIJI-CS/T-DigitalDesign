@@ -17,6 +17,8 @@ theme:
     - search.share
     - content.action.edit
     - content.action.view
+    - content.code.annotate
+    - content.code.copy
   icon:
     repo: fontawesome/brands/github-alt
     edit: material/pencil
@@ -48,6 +50,9 @@ markdown_extensions:
       alternate_style: true 
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - git-revision-date-localized:
@@ -55,9 +60,13 @@ plugins:
       timezone: Asia/Shanghai
       locale: zh
       enable_creation_date: true
+  - search:
+      separator: '[\s\-\.]+'
   - git-committers:
       repository: CS-ZIJI/T-DigitalDesign # TODO: 请修改本配置项
       branch: main
+  - statistics:
+      words_per_minute: 200
 
 extra_css:
   - supports/css/base.css
@@ -74,7 +83,13 @@ extra_javascript:
 
 nav:
   - "封面": index.md
-  - 0-x.md
+  - 1-x.md
+  - 2-x.md
+  - 3-x.md
+  - 4-x.md
+  - 5-x.md
+  - 6-x.md
+  - 7-x.md
 
 # ======================================== <<<
 
