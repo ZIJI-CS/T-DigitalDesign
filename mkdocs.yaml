@@ -23,6 +23,7 @@ theme:
     repo: fontawesome/brands/github-alt
     edit: material/pencil
     view: material/eye
+  custom_dir: overrides
 
 markdown_extensions:
   - toc:
