@@ -1,26 +1,9 @@
-# 数字逻辑设计
+# CS-ZIJI
 
-!!! info "课程基本信息"
+请访问 **About** 中的 URL 来访问网页。
 
-    - 课程名称：数字逻辑设计
-    - 课程代码：`211C0060`
-    - 授课老师：马德、施青松、张明敏、王总辉、刘海风、王跃明、蔡铭、杨莹春、董亚波、……
+如果遇到公式渲染等问题，请尝试切换到更科学的网络环境再做尝试。
 
-!!! section "资源目录"
+## 关于贡献
 
-    - [1.x Digital Systems and Information](1-x.md)
-    - [2.x Combinational Logic Circuits](2-x.md)
-    - [3.x Combinational Logic Design](3-x.md)
-    - [4.x Sequential Circuits](4-x.md)
-    - [5.x Digital Hardware Implementation](5-x.md)
-    - [6.x Registers & Register Transfers](6-x.md)
-    - [7.x Memory Basics](7-x.md)
-
-!!! advice "TODO"
-
-    - [ ] 迁移后的勘误和风格整理；
-    - [ ] 更多练习题；
-    - [ ] 资源页；
-
-
-> 本笔记迁移自 [Isshiki修's Notebook](https://note.isshikih.top/cour_note/D2QD_DigitalDesign/){target="_blank"}。
+如果您有任何关于本项目的建议或意见，又或者是想维护新的课程资源，请考虑提交 Issue 或参考[本页](https://github.com/CS-ZIJI/.github)了解贡献方式！
