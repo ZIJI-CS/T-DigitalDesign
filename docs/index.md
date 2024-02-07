@@ -18,9 +18,10 @@
 
 !!! advice "TODO"
 
-    - [ ] 迁移后的勘误和风格整理；
+    - [x] 迁移后的勘误和风格整理；
     - [ ] 更多练习题；
-    - [ ] 资源页；
+    - [ ] 资源页以及其他资源（例如历年卷、拓展阅读等）；
+    - [ ] 配图更换（目标是让所有配图都变成更好看的、不容易引起版权问题的图）；
 
 
 > 本笔记迁移自 [Isshiki修's Notebook](https://note.isshikih.top/cour_note/D2QD_DigitalDesign/){target="_blank"}。
