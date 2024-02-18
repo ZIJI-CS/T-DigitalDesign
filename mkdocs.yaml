@@ -3,13 +3,12 @@ repo_name: CS-ZIJI/T-DigitalDesign # TODO: 请修改本节配置项
 repo_url: https://github.com/CS-ZIJI/T-DigitalDesign # TODO: 请修改本节配置项
 edit_uri: blob/main/docs
 
-copyright: 'Copyright &copy 2023 CS-ZIJI'
+copyright: 'Copyright &copy 2023 CS-ZIJI' # TODO: 请修改项配置，主要就是年份，对的就不用管
 
 theme:
   name: material
   language: zh
   features:
-    - navigation.tracking
     - navigation.indexes
     - navigation.expand
     - navigation.top
@@ -27,10 +26,10 @@ theme:
 
 markdown_extensions:
   - toc:
-      permalink: true # 每个标题都有锚点
+      permalink: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
   - admonition
-  - pymdownx.details # foldable admonition
+  - pymdownx.details
   - attr_list
   - footnotes
   - md_in_html
@@ -64,24 +63,29 @@ plugins:
   - search:
       separator: '[\s\-\.]+'
   - git-committers:
-      repository: CS-ZIJI/T-DigitalDesign # TODO: 请修改本配置项
+      repository: CS-ZIJI/T-DigitalDesign # TODO: 请修改本项配置，一般同步于 repo_name 即可（如果主分支不叫 main 也请修改 branch 项）
       branch: main
   - statistics:
       words_per_minute: 200
   - glightbox
 
 extra_css:
+  # 如果需要修改主题样式，可以修改 `theme.css`；如果需要修改 admonitions 的主题，可以修改 `admonitions.css`
   - supports/css/base.css
   - supports/css/theme.css
   - supports/css/admonitions.css
+  # 如果公式渲染样式出现问题，请检查如下脚本
   - https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.css
 
-extra_javascript: 
+extra_javascript:
+  # 自动令所有第三方链接在新标签页中打开
+  - supports/js/xlink.js
+  # 如果公式渲染出现问题，请检查如下脚本
   - supports/js/katex.js
   - https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.js
 
 # ======================================== >>>
-# TODO: 请修改本节配置项
+# TODO: 请修改本项配置，本节是导航配置项，一般只需要在下面增加新的章节对应的文件即可，支持结构化配置
 
 nav:
   - "封面": index.md
