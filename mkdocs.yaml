@@ -9,6 +9,7 @@ theme:
   name: material
   language: zh
   features:
+    - navigation.tabs
     - navigation.indexes
     - navigation.expand
     - navigation.top
@@ -88,14 +89,17 @@ extra_javascript:
 # TODO: 请修改本项配置，本节是导航配置项，一般只需要在下面增加新的章节对应的文件即可，支持结构化配置
 
 nav:
-  - "封面": index.md
-  - 1-x.md
-  - 2-x.md
-  - 3-x.md
-  - 4-x.md
-  - 5-x.md
-  - 6-x.md
-  - 7-x.md
+  - "Home": "https://cs-ziji.github.io/"
+  - "Main": 
+    - index.md
+    - 1-x.md
+    - 2-x.md
+    - 3-x.md
+    - 4-x.md
+    - 5-x.md
+    - 6-x.md
+    - 7-x.md
+  # - "Appendix":
 
 # ======================================== <<<
 
