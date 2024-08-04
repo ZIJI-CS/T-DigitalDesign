@@ -11,4 +11,4 @@ site
 # Automation Supports
 .trash
 .base_repo
-sync_patch.diff
+sync_patch.patch
