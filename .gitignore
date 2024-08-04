@@ -6,4 +6,9 @@
 .DS_Store
 
 # Static Files
-site/
+site
+
+# Automation Supports
+.trash
+.base_repo
+sync_patch.diff
