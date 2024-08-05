@@ -9,12 +9,9 @@ cd $workDir
 # ======
 
 # Step 1: clone base repository.
-if [ -d .base_repo ]; then
-    echo "The \`.base_repo\` folder is occupied. Delete this folder and try again!"
-    echo "已存在 \`.base_repo\` 文件夹，请删除该文件夹后重试！"
-    exit 0
+if [ ! -d ".base_repo" ]; then
+    git clone https://github.com/ZIJI-CS/F-MkDocs-Template.git .base_repo
 fi
-git clone https://github.com/CS-ZIJI/F-MkDocs-Template.git .base_repo
 
 # Step 2: before syncing, storage changes not committed.
 if [ -n "$(git status --porcelain)" ]; then
@@ -26,7 +23,8 @@ fi
 # Step 3: pack patches according to `.base_commit`.
 baseCommitHash=`cat .base_commit`
 cd .base_repo
-git format-patch $baseCommitHash..HEAD -- ":(exclude).cache" --stdout > sync_patch.patch
+git pull  # update the base repository, in case the base repository has been updated
+git format-patch --stdout $baseCommitHash..HEAD -- ":(exclude).cache" > sync_patch.patch
 
 # Step 4: store the latest base commit.
 git log -1 --pretty=format:%H > ../.base_commit_latest
@@ -39,9 +37,8 @@ if ! git apply --reject --whitespace=fix .base_repo/sync_patch.patch; then
     exit 0
 fi
 
-# Step 6: remove the `.base_repo` folder and apply the commit_base.
+# Step 6: apply the commit_base.
 mv .base_commit_latest .base_commit
-rm -rf .base_repo
 
 # Step 7: commit the changes.
 git add -A
