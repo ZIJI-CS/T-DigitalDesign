@@ -1,0 +1,1308 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../2-x/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>1.x Digital Systems and Information - ZIJI-CS-DigitalDesign</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../supports/css/base.css">
+    
+      <link rel="stylesheet" href="../supports/css/theme.css">
+    
+      <link rel="stylesheet" href="../supports/css/admonitions.css">
+    
+      <link rel="stylesheet" href="https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1x-digital-systems-and-information" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="ZIJI-CS-DigitalDesign" class="md-header__button md-logo" aria-label="ZIJI-CS-DigitalDesign" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ZIJI-CS-DigitalDesign
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1.x Digital Systems and Information
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ZIJI-CS/T-DigitalDesign" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZIJI-CS/T-DigitalDesign
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://ziji-cs.github.io/" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
+  
+    
+  
+  Main
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ZIJI-CS-DigitalDesign" class="md-nav__button md-logo" aria-label="ZIJI-CS-DigitalDesign" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ZIJI-CS-DigitalDesign
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ZIJI-CS/T-DigitalDesign" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ZIJI-CS/T-DigitalDesign
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://ziji-cs.github.io/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href=".." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Main
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Main
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1.x Digital Systems and Information
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1.x Digital Systems and Information
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#信息表达--information-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      信息表达 | Information Representation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#计算机系统设计中的抽象层--abstraction-layers-in-computer-systems-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算机系统设计中的抽象层 | Abstraction Layers in Computer Systems Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#数字系统--number-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      数字系统 | Number Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#算术运算--arithmetic-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      算术运算 | Arithmetic Operations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#编码--codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      编码 | Codes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="编码 | Codes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#独热码--独冷码" class="md-nav__link">
+    <span class="md-ellipsis">
+      独热码 &amp; 独冷码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bcd-码" class="md-nav__link">
+    <span class="md-ellipsis">
+      BCD 码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#余三码" class="md-nav__link">
+    <span class="md-ellipsis">
+      余三码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#格雷码" class="md-nav__link">
+    <span class="md-ellipsis">
+      格雷码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ascii-码" class="md-nav__link">
+    <span class="md-ellipsis">
+      ASCII 码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#奇偶校验位" class="md-nav__link">
+    <span class="md-ellipsis">
+      奇偶校验位
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.x Combinational Logic Circuits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3.x Combinational Logic Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4.x Sequential Circuits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5.x Digital Hardware Implementation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6.x Registers &amp; Register Transfers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7-x/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.x Memory Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#信息表达--information-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      信息表达 | Information Representation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#计算机系统设计中的抽象层--abstraction-layers-in-computer-systems-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      计算机系统设计中的抽象层 | Abstraction Layers in Computer Systems Design
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#数字系统--number-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      数字系统 | Number Systems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#算术运算--arithmetic-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      算术运算 | Arithmetic Operations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#编码--codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      编码 | Codes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="编码 | Codes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#独热码--独冷码" class="md-nav__link">
+    <span class="md-ellipsis">
+      独热码 &amp; 独冷码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bcd-码" class="md-nav__link">
+    <span class="md-ellipsis">
+      BCD 码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#余三码" class="md-nav__link">
+    <span class="md-ellipsis">
+      余三码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#格雷码" class="md-nav__link">
+    <span class="md-ellipsis">
+      格雷码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ascii-码" class="md-nav__link">
+    <span class="md-ellipsis">
+      ASCII 码
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#奇偶校验位" class="md-nav__link">
+    <span class="md-ellipsis">
+      奇偶校验位
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/ZIJI-CS/T-DigitalDesign/blob/main/docs/1-x.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/ZIJI-CS/T-DigitalDesign/raw/main/docs/1-x.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg>
+    </a>
+  
+
+
+<h1 id="1x-digital-systems-and-information">1.x Digital Systems and Information<a class="headerlink" href="#1x-digital-systems-and-information" title="Permanent link">&para;</a></h1>
+<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2055 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg></span> 9 行代码 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 10 分钟</p>
+</div>
+<h2 id="信息表达--information-representation">信息表达 | Information Representation<a class="headerlink" href="#信息表达--information-representation" title="Permanent link">&para;</a></h2>
+<p>现实世界中的信息往往是<strong>连续(continuous)</strong>的，但在人造物的世界中，大部分信息都是<strong>离散(discrete)</strong>的。</p>
+<p>在电子信息系统中，信号分为<strong>模拟信号(analog signal)</strong>和<strong>数字信号(digital signal)</strong>两种。其中，在<strong>数字信号(digital signal)</strong>中又有多种表示方法，如今我们最常用的是<strong>二进制(binary)</strong>。对应到电路层面，我们常常用<strong>高电位(HIGH)</strong>和<strong>低电位(LOW)</strong>来表征 <code>1</code> 和 <code>0</code>。</p>
+<p><a class="glightbox" href="../imgs/1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../imgs/1.png" /></a></p>
+<blockquote>
+<p>值得注意的是，在输入和输出中，高低电位的接受范围是不同的。可以发现，输入的判定范围比输出的判定范围大，即<strong>宽进严出</strong>。其目的是为了进一步提高电路在噪音等异常影响下也能正常表现的能力。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">HIGH input</th>
+<th style="text-align: center;">LOW input</th>
+<th style="text-align: center;">HIGH output</th>
+<th style="text-align: center;">LOW output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0.6 ~ 1.1</td>
+<td style="text-align: center;">-0.1 ~ 0.4</td>
+<td style="text-align: center;">0.9 ~ 1.1</td>
+<td style="text-align: center;">-0.1 ~ 0.1</td>
+</tr>
+</tbody>
+</table>
+<p>或许你也已经注意到了，在图中，HIGH 的接受范围和 LOW 的接受范围之间还存在一段区域。落在这一部分的电平是<strong>未定义(undefined)</strong>的，也被称为是<strong>浮动(floating)</strong>的。如果输出的电平是在浮动区间的，那么其认定值将是随机的。</p>
+<blockquote>
+<p>事实上，在信息的对应上，虽然将高低电平同 HIGH/LOW 联系是很自然的，但是将他们同 true/false 或者 1/0 联系其实并不唯一。但是在一般情况下（我们称之为 positive logic），我们都认为 HIGH ~ true ~ 1， LOW ~ false ~ 0。</p>
+</blockquote>
+<p>可以发现，(b) 图中的模拟信号在经过我们的器件后，会被认为是 (c) 图所示的信号。而这些操作在硬件层面，我们通过<strong>晶体管(transistors)</strong>来实现。</p>
+<blockquote>
+<p>这也牵扯到我们为什么最终使用二进制来表示信息。一方面是因为二值器件比较常见，亦即这里提到的晶体管；另外一方面是使用二进制可以降低电路成本。</p>
+</blockquote>
+<hr />
+<h2 id="计算机系统设计中的抽象层--abstraction-layers-in-computer-systems-design">计算机系统设计中的抽象层 | Abstraction Layers in Computer Systems Design<a class="headerlink" href="#计算机系统设计中的抽象层--abstraction-layers-in-computer-systems-design" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">越上层抽象程度越高</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Algorithms</td>
+</tr>
+<tr>
+<td style="text-align: center;">Programing Languages</td>
+</tr>
+<tr>
+<td style="text-align: center;">Operating Systems</td>
+</tr>
+<tr>
+<td style="text-align: center;">Instruction Set Architecture</td>
+</tr>
+<tr>
+<td style="text-align: center;">Microarchitecture</td>
+</tr>
+<tr>
+<td style="text-align: center;">Register Transfers</td>
+</tr>
+<tr>
+<td style="text-align: center;">Logic Gates</td>
+</tr>
+<tr>
+<td style="text-align: center;">Transistor Circuits</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="数字系统--number-systems">数字系统 | Number Systems<a class="headerlink" href="#数字系统--number-systems" title="Permanent link">&para;</a></h2>
+<p>首先需要涉及的问题是进制转换。</p>
+<p>对于一个 <span class="arithmatex">\(r\)</span> 进制数，它一般被写成这样：</p>
+<div class="arithmatex">\[
+(A_{n-1}A_{n-2}...A_1A_0A_{-1}...A_{-(m-1)}A_{-m})_{r}
+\]</div>
+<p>而它对应的十进制真值为：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\sum_{i=-m}^{n-1} A_ir^i\;\;
+=&amp;A_{n-1}r^{n-1}+A_{n-2}r^{n-2}+...\\
++&amp;A_{1}r^{1}+A_0r^0+A_{-1}r^{-1}+...\\
++&amp;A_{-(m-1)}r^{m-1}+A_{-m}r^{-m}
+\end{aligned}
+\]</div>
+<p>计算机领域常见的进制主要是<strong>二进制(binary)</strong>，<strong>八进制(octal)</strong>，<strong>十进制(decimal)</strong>和<strong>十六进制(hexadecimal)</strong>。</p>
+<p>其中二、八、十六进制之间的转换非常简单，存在多位到一位之间的无后效性映射，例如二进制转换到十六进制只需要将从低到高每四位转化成十六进制中的一位即可。</p>
+<blockquote>
+<p>需要注意，由于二进制和十进制在零位上的权重相同，这意味着在整数部分，二进制和十进制是可以相互精准转化的（即最小精度是一致的，都是 1）；然而该性质在小数部分并不成立（因为小数部分不存在“最小精度”一说），即十进制无法精准转化为二进制，但二进制可以转化为十进制。</p>
+</blockquote>
+<hr />
+<h2 id="算术运算--arithmetic-operations">算术运算 | Arithmetic Operations<a class="headerlink" href="#算术运算--arithmetic-operations" title="Permanent link">&para;</a></h2>
+<p>这里涉及的主要是<strong>加法(Addition)</strong>、<strong>减法(Subtraction)</strong>、<strong>乘法(Multiplication)</strong>。</p>
+<p>整体流程和小学竖式加法是一致的。</p>
+<details class="summary">
+<summary>二进制运算</summary>
+<div style="text-align: center;">
+<p><strong>Binary Addition with Carry</strong></p>
+<p><a class="glightbox" href="../imgs/2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../imgs/2.png" style="width: 90%;"></a></p>
+<p><strong>Binary Subtraction with Borrow</strong></p>
+<p><a class="glightbox" href="../imgs/3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../imgs/3.png" style="width: 90%;"></a></p>
+<p><strong>Binary Multiplication</strong></p>
+<p><a class="glightbox" href="../imgs/4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../imgs/4.png" style="width: 90%;"></a>
+</div></p>
+</details>
+<hr />
+<h2 id="编码--codes">编码 | Codes<a class="headerlink" href="#编码--codes" title="Permanent link">&para;</a></h2>
+<p>二进制编码主要分为这么几种：</p>
+<ul>
+<li>Numeric<ul>
+<li>必须表达一定范围内的数字；</li>
+<li>能够支持简单且普遍的计算；</li>
+<li>和二进制数值本身有较大关联；</li>
+</ul>
+</li>
+<li>Non-numeric<ul>
+<li>相对灵活，因为不需要适配普遍的运算法则；<ul>
+<li>灵活性指，保证编码映射关系是唯一的的情况下都可以称为合法编码；</li>
+</ul>
+</li>
+<li>和二进制数值本身未必有关系；</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3 id="独热码--独冷码">独热码 &amp; 独冷码<a class="headerlink" href="#独热码--独冷码" title="Permanent link">&para;</a></h3>
+<p><strong>独热码(one-hot)</strong>要求比特向量中只有一位是 <code>1</code>；对应的还有<strong>独冷码(one-cold)</strong>。</p>
+<p>使用这种编码的好处是，决定或改变状态机目前的状态的成本相对较低，容易设计也容易检测非法行为等。</p>
+<p>但是相对应的，缺点是信息表示率较低，非法状态非常多而有效状态很少。</p>
+<hr />
+<h3 id="bcd-码">BCD 码<a class="headerlink" href="#bcd-码" title="Permanent link">&para;</a></h3>
+<p>由于真实世界中大部分数据表述都是以十进制实现的，所以我们需要研究如何用二进制来表示十进制。</p>
+<p>首先，一位二进制数能包含的信息是 1bit，也就是一个“真”或者一个“假”。我们称一个拥有 n 个元素的二进制向量为一个 <strong>n 位二进制编码(n-bit binary code)</strong>。一个 n 位二进制数拥有 <span class="arithmatex">\(2^{n}\)</span> 种可能的组合，因而可以表示 <span class="arithmatex">\(2^n\)</span> 种信息。</p>
+<p>而我们需要设计的编码系统，就是将我们需要的信息映射到这 <span class="arithmatex">\(2^n\)</span> 个“空位”中。当然，当我们需要表示的信息数量并不是 2 的幂次时候，会出现一些 未分配(unassigned) 的比特组合。</p>
+<p>而在这种编码中，最常用的就是<strong>BCD 码(binary-coded demical)</strong>。其核心思路就是，将十进制的每一位<strong>分别</strong>用<strong>真值相等的 4 位二进制</strong>表示，即 <code>0</code> ~ <code>9</code> 分别用 <code>0000</code> ~ <code>1001</code> 表示。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Decimal<br>Symbol</th>
+<th style="text-align: center;">BCD<br>Digit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>0</code></td>
+<td style="text-align: center;"><code>0000</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1</code></td>
+<td style="text-align: center;"><code>0001</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>2</code></td>
+<td style="text-align: center;"><code>0010</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>3</code></td>
+<td style="text-align: center;"><code>0011</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>4</code></td>
+<td style="text-align: center;"><code>0100</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>5</code></td>
+<td style="text-align: center;"><code>0101</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>6</code></td>
+<td style="text-align: center;"><code>0110</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>7</code></td>
+<td style="text-align: center;"><code>0111</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>8</code></td>
+<td style="text-align: center;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>9</code></td>
+<td style="text-align: center;"><code>1001</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">eg</p>
+<div class="arithmatex">\[
+\mathrm{ (185)_{10}\;=\;(0001\;1000\;0101)_{BCD}\;=\;(10111001)_2 }
+\]</div>
+</div>
+<hr />
+<h3 id="余三码">余三码<a class="headerlink" href="#余三码" title="Permanent link">&para;</a></h3>
+<p>一种<strong>BCD 码</strong>的改进是<strong>余三码(Excess3)</strong>。其核心思路是在 BCD 码的基础上，增加一个大小为 3 的偏移量。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Decimal<br>Symbol</th>
+<th style="text-align: center;">Excess3<br>Digit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><code>0</code></td>
+<td style="text-align: center;"><code>0011</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>1</code></td>
+<td style="text-align: center;"><code>0100</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>2</code></td>
+<td style="text-align: center;"><code>0101</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>3</code></td>
+<td style="text-align: center;"><code>0110</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>4</code></td>
+<td style="text-align: center;"><code>0111</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>5</code></td>
+<td style="text-align: center;"><code>1000</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>6</code></td>
+<td style="text-align: center;"><code>1001</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>7</code></td>
+<td style="text-align: center;"><code>1010</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>8</code></td>
+<td style="text-align: center;"><code>1011</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><code>9</code></td>
+<td style="text-align: center;"><code>1100</code></td>
+</tr>
+</tbody>
+</table>
+<p>为什么是 3 呢？首先这个 3 来自于 <span class="arithmatex">\(\frac{16-10}{2}\)</span>，也就是 8421 码的容量减去我们需要表示的数字数量，再除以二。这样的好处是，十进制下能进位的两个数，在余三码下相加也刚好进位。</p>
+<p>但是需要强调的一点是，编码和数值是存在区别的，虽然我们提到了余三码相加，但是编码做运算多数情况下是没有意义的。“运算”的主体更多是数值。</p>
+<hr />
+<h3 id="格雷码">格雷码<a class="headerlink" href="#格雷码" title="Permanent link">&para;</a></h3>
+<p>此外，这里不得不提的另外一个编码是<strong>格雷码(Gray Codes)</strong>。格雷码的特征，也是他的优点，就是相邻的两个数在二进制下的表示只差一位（当在占满时，对于整个编码序列，环状满足该条件）。</p>
+<p>比如有如下应用：</p>
+<p><a class="glightbox" href="../imgs/5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../imgs/5.png" /></a></p>
+<p>以及在许多状态控制中都有着广泛的应用。</p>
+<p>从笔试做题角度来说，格雷码最麻烦的其实是与十进制数的转换。<br />
+（此处 <a href="https://www.luogu.com.cn/problem/P5657" target="_blank">@CSP-S2019-Day1-T1</a>）</p>
+<div class="admonition note">
+<p>个人认为最好做的做法就是，假设我们要找的是第 k 个格雷码，则对应的格雷码为：</p>
+<div class="arithmatex">\[
+k \;\;\mathrm{XOR}\;\; (k&gt;&gt;1)
+\]</div>
+</div>
+<hr />
+<h3 id="ascii-码">ASCII 码<a class="headerlink" href="#ascii-码" title="Permanent link">&para;</a></h3>
+<p>字符编码所使用的一般是 ASCII 编码，由于 ASCII 已经是老生常谈了，所以这里不再展开。</p>
+<hr />
+<h3 id="奇偶校验位">奇偶校验位<a class="headerlink" href="#奇偶校验位" title="Permanent link">&para;</a></h3>
+<!-- 这部分内容对于数字逻辑设计这门课程参考意义不大，而且图片 6.png 来自网络，可能存在侵权问题，故暂时删除
+     image source: https://link.springer.com/chapter/10.1007/978-3-319-21170-1_1
+                   https://images.app.goo.gl/sCuacbimauGHPt7B6
+
+信源编码(source coding)与信道编码(channel coding)：
+
+![](imgs/6.png)
+
+-->
+
+<p>在信号传输过程中，可能由于环境干扰等原因，出现各种信号抖动，所以为了保证数据的可信度，我们需要一个错误检测机制。</p>
+<p>一种常见的方法是<strong>冗余(Redundancy)</strong>，即加入一些额外的信息用以校验。</p>
+<pre class="mermaid"><code>graph TD
+A[Error Detection Techniques]
+B[Single Parity Check]
+C[Cyclic Redundancy Check]
+D[Check Sum]
+
+A--&gt;B
+A--&gt;C
+A--&gt;D</code></pre>
+<p>其中一种做法是引入<strong>奇偶校验位(Parity Bit)</strong>。它分为<strong>奇校验(Odd Parity)</strong>和<strong>偶校验(Even Parity)</strong>。分别通过引入额外的一位，来保证整个信息串中 <code>1</code> 的数量是奇数/偶数。</p>
+<ul>
+<li>比如，如果我们采用偶校验，原始信息为 <code>1101</code>，其中有 3 个 <code>1</code>，这时我们在后面再加上一个 <code>1</code>，保证了整个信息串中有偶数个 <code>1</code>；或者如果原始信息为 <code>1001</code>，其中有 2 个 <code>1</code>，这时我们则在后面加一个 <code>0</code>。此时，如果传输过程中出现了问题，那么 <code>1</code> 的数量很可能变成了一个奇数，此时我们就知道，这个信息是不对的。</li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="最后更新">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2024年8月5日 08:44:05</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="创建日期">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2024年8月5日 08:44:05</span>
+  </span>
+
+    
+    
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="贡献者">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/IsshikiHugh" class="md-author" title="@IsshikiHugh">
+          
+          <img src="https://avatars.githubusercontent.com/u/48550237?v=4&size=72" alt="IsshikiHugh">
+        </a>
+      
+        <a href="https://github.com/MinJoker" class="md-author" title="@MinJoker">
+          
+          <img src="https://avatars.githubusercontent.com/u/136879664?v=4&size=72" alt="MinJoker">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
+    
+  </aside>
+
+
+
+
+
+
+  <h2 id="__comments">评论</h2>
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+        data-repo="ZIJI-CS/T-DigitalDesign"
+        data-repo-id="R_kgDOLIcg8w"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOLIcg884Cc81v"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+  </script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = "light"
+      giscus.setAttribute("data-theme", theme)
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy 2023 ZIJI-CS
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../supports/js/xlink.js"></script>
+      
+        <script src="../supports/js/katex.js"></script>
+      
+        <script src="https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
